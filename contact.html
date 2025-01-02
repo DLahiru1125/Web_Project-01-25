@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact_services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    
+</head>
+<body>
+    <nav>     
+        <img src="NLogo.png" alt="Logo" class="logo">
+
+        <a href="index.html"> Home</a>
+        <a href="shop.html"> Shop</a>
+        <a href="services.html">Services</a>
+        <a href="Blog.html">Blog</a>
+        <a href="About.html" >About</a>
+        <a href="contact.html"  class="active">Contact</a>
+  </nav>
+
+
+
+
+    <div class="contact01">
+        <div class="contact02">
+            <h1>Contact Us</h1>
+            <p class="con_p0">Need help? </p> 
+            <p class="con_p1">Our support team are here to answer all your questions.</p><br>
+            <p class="con_p2"><strong>Email:</strong> info@email.com</p>
+            <p class="con_p2"><strong>Phone:</strong> 076 xxxxxxx</p>
+            <p class="con_p2"><strong>Address:</strong> Badulla, Sri Lanka</p>
+        </div>
+        <form class="contact_form" onsubmit="submitForm(event)">
+            <div class="group">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" placeholder="first name" required>
+            </div>
+            <div class="group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="last name" required>
+            </div>
+            <div class="group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="group">
+                <label for="subject">Subject*</label>
+                <input type="text" id="subject" name="subject" placeholder="subject" required>
+            </div>
+            <div class="group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="4"placeholder="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer1">
+          <div class="footer2">
+            <img src="logos.png" alt="Photography Logo"> 
+            <h2>Join with our Photography Website</h2>
+            <p>Join to get special offers, free giveaways, and once in a lifetime deals.</p>
+            <div class="search-bar">
+              <input type="text" placeholder="Search anything"> 
+              <br>
+              <br>
+              <button>Search</button>
+            </div>
+            <div>
+              <br><br>
+              <a href="https://www.fb.com/l/6lp1kJRRR" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/" class="social-link"><i class="fab fa-twitter" target="_blank"></i></a>
+              <a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram" target="_blank"></i></a>
+              <a href="https://dribbble.com/DLahiru" class="social-link" target="_blank"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p>&copy; Dream Delights Photography. All Rights Reserved.<span class="space"></span> Terms of Use | Privacy Policy </p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="contact_script.js"></script>
+</body>
+</html>

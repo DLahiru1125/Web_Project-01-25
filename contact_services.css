@@ -1,0 +1,1686 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    background-image: url(QG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust background size for responsiveness */
+    background-position: center;
+}
+
+
+
+/* Navigation Bar                   Navigation Bar                    Navigation Bar */
+
+nav {
+    
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: flex-end; /* Aligns the links right */
+    align-items: center; /* Vertically center the links */
+    font-size: 16px;
+
+}
+
+/* logo image */
+nav .logo {
+    display: inline-block;
+    width: 160px; 
+    height: auto;
+    margin-right: 500px; /* align to left */
+}
+
+nav a {                             /*Use to a tag*/
+    color: white;
+    padding: 10px 20px; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    display: inline-block; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+    
+}
+
+/* Active tab  */
+nav a.active {                                  /*    select all nav, a element,   */                                            
+    background-color: #00ccff;                /*     . means class selector   */
+    color: white; 
+}
+
+/* Hover effects */
+nav a:hover {
+    background-color: #555;         /*    Background color is property   */
+    color: white;                   /*    #555 is value   */ 
+    transform: scale(1.1); 
+}
+
+/* hover color) */
+nav a.active:hover {                       /*    .active -is a class selector   */ 
+    background-color: #0056b3;           /*    :hover - is a pseudo-class.   */ 
+    transform: scale(1.1); 
+}
+
+nav a::before {                        /*    ::before -is a pseudo-element   */          
+    content: "";                /*This CSS code provides a building block for */
+    position: absolute;   /*creating interactive and visually engaging navigation links.*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: #00d9ff3a; 
+    transform: translateY(-100%); 
+    transition: all 0.2s ease;
+}
+
+
+/* First Section Background Image */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    background-image: url(QG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust background size for responsiveness */
+    background-position: center;
+}
+
+
+/* First Section Background Image */
+.ser_sec1 {
+    background: url('QG1.jpg') ;
+    display: flex;
+    height: 100vh; 
+    width: auto;          /*The height is as high as the entire                                 visible area of ​​your browser window.*/
+    opacity: 1;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(QG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* First Section h1 */
+.ser_sec1 h1 {
+    font-size: 6em;             /* Use em units for relative font size */
+    margin-bottom: 20px;
+    text-align: left;  
+    margin-left: 50px; 
+    padding-left: 50px;  
+}
+
+.ser_sec1 h1:hover {
+    color: rgb(57, 176, 255); 
+    animation: zoomInBlast 0.8s ease-in-out;
+  }
+
+
+  /* First Section p */
+
+.ser_sec1 p {
+    font-size: 1.5em;
+    max-width: 85%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+@keyframes zoomInBlast {                /*    This CSS code creates a pulsing animation, */
+    0% {                                 /*     its original state and then returns to      */
+        transform: scale(1);              /*        its original state.                        */
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Second Section */        /* Second Section */            /* Second Section */
+
+.ser_sec2 {
+    padding: 40px 20px;
+    text-align: center;
+    height: 100vh;
+    background-image: url(QG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ser_sec2 h2 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    color: #e9f9ff;
+}
+
+.ser_sec2 h2:hover {
+    color: rgb(48, 187, 252); 
+  }
+
+.ser_services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ser_services .box {
+    background-color: #fff;
+    width: 30%; /* Adjust width for smaller screens */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ser_services .box img{
+    border-radius: 10px;
+}
+
+.ser_services .box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: rgb(2, 28, 68);
+}
+.ser_services .box h3:hover {
+    color: rgb(65, 141, 255); 
+  }
+
+
+.ser_services.box h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: rgb(65, 141, 255);
+}
+
+.ser_services.box p {
+    font-size: 1em;
+}
+.ser_services.box :hover {
+    background-color: #e4e4e4; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow effect */
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    transition: all 0.4s ease-in-out; /* Smooth transition effect */
+}
+
+
+
+/* Third Section */         /* Third Section */             /* Third Section */
+
+
+.ser_sec3 {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto; 
+    width: auto;/* Adjust height to be flexible */
+    background-image: url(QG3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ser_sec3 h2 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    color: #e4e4e4;
+}
+.ser_sec3 h2:hover {
+    color: rgb(65, 195, 255); 
+  }
+  .ser_sec3 .all-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid layout for different screen sizes */
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.service-box h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+.service-box h3:hover {
+    color: rgb(65, 141, 255); 
+  }
+.service-box p {
+    font-size: 1em;
+}
+.ser_services .box img{
+    border-radius: 20px;
+}
+
+.ser_sec3 .all-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Adjust the gap between boxes as needed */
+    justify-content: center; /* Center the grid items horizontally */
+  }
+  
+  .ser_sec3  .service-box {
+    /* ... other styles ... */
+    text-align: center; /* Center the content within each box */
+  }
+ 
+ 
+  .ser_sec3  .service-box:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow effect */
+}
+
+
+
+/* Fourth Section */         /* Fourth Section */            /* Fourth Section */
+/* Fourth Section */         /* Fourth Section */            /* Fourth Section */
+/* Fourth Section */         /* Fourth Section */            /* Fourth Section */
+/* Fourth Section */         /* Fourth Section */            /* Fourth Section */
+
+
+.ser_sec4 {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url(QG4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ser_sec4  h2 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+    color: #e4e4e4;
+}
+
+.ser_sec4  h2:hover {
+    color: rgb(65, 185, 255); 
+  }
+
+
+.ser_sec4  .service-box {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%; /* This line adds the round shape */
+    overflow: hidden; /* To hide content that overflows the circle */
+  }
+.ser_sec4  .service-box img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Make the image also round */
+}
+  
+.ser_sec4  .service-box h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.ser_sec4  .service-box p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+
+
+/* Fifth Section */             /* Fifth Section */                 /* Fifth Section */
+/* Fifth Section */             /* Fifth Section */                 /* Fifth Section */
+/* Fifth Section */             /* Fifth Section */                 /* Fifth Section */
+/* Fifth Section */             /* Fifth Section */                 /* Fifth Section */
+
+.ser_sec5 {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto; /* Adjust height to be flexible */
+    background-image: url(E4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ser_sec5 h2 {
+    font-size:3em;
+    margin-bottom: 40px;
+    color: #ffffff;    
+}
+.ser_sec5 h2:hover {
+    color: rgb(51, 173, 255); 
+  }
+
+.ser_sec5 .que_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ser_sec5 .que_div .question {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ser_sec5 .que_div .question h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #090936;
+  }
+
+
+  .ser_sec5 h3:hover {
+    animation: zoomInBlast 0.8s ease-in-out;
+}
+
+
+.ser_sec5 .que_div .question p {
+    font-size: 1em;
+    color: #5a054f;
+}
+
+
+/*       CONTACT PAGE            CONTACT PAGE            CONTACT PAGE        */
+/*       CONTACT PAGE            CONTACT PAGE            CONTACT PAGE        */
+/*       CONTACT PAGE            CONTACT PAGE            CONTACT PAGE        */
+/*       CONTACT PAGE            CONTACT PAGE            CONTACT PAGE        */
+.contact01 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1980px;
+    margin: 80px;
+    color: #ffffff;
+    background-image: url(CBG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust background size for responsiveness */
+    background-position: center;
+    height: 80vh;
+    font-size: 1em;
+}
+
+.contact02 h1{
+    font-size: 4em;
+    color: #ddd;
+}
+.contact02 {
+    flex: 1;
+    margin-right: 20px;
+
+}
+.contact02 .con_p0{
+    font-size: 2em;
+}
+.contact02 .con_p1{
+    font-size: 1.5em;
+}
+.contact02 .con_p2{
+    font-size: 22px;
+}
+
+.contact_form {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #141414;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .contact01 {
+        flex-direction: column; /* Ensure column layout on smaller screens */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens, e.g., tablets */
+    .sec1 h1 {
+        font-size: 2em;
+    }
+
+    .sec2 h2, .sec3 h2, .sec5 h2 {
+        font-size: 2em;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .all-services {
+        grid-template-columns: 1fr;
+    }
+
+    .sec4 .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for smaller screens, e.g., mobile phones */
+    .sec1 h1 {
+        font-size: 1.6em;
+    }
+
+    .sec2 h2, .sec3 h2, .sec5 h2 {
+        font-size: 1.6em;
+    }
+}
+
+.sec1 {
+    min-height: 100vh; /* Set a minimum height to fill the viewport */
+  }
+.sec2 {
+    min-height: 100vh ; /* Remove fixed height for smaller screens */
+  }
+.sec3 {
+    min-height: 100vh; 
+  }
+.sec4 {
+    min-height: 100vh; 
+  }
+.sec5 {
+    min-height: 100vh; 
+  }
+
+
+
+  /*footer          footer          footer*/
+    /*footer          footer          footer*/
+      /*footer          footer          footer*/
+
+
+
+  
+  footer {
+    background-color: #f0f0f0; 
+    padding: 30px 0;
+  }
+  
+  .footer1 {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .footer2 img {
+    width: 200px;
+  }
+  
+  .footer2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer2 p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+  }
+
+  .social-link {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+
+
+  
+
+  
+  .search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 250px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    width: auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .space {
+    margin-left: 30px; 
+  }
+
+
+
+  /* about us*/    /* about us*/          /* about us*/            /* about us*/
+    /* about us*/    /* about us*/          /* about us*/            /* about us*/
+      /* about us*/    /* about us*/          /* about us*/            /* about us*/
+        /* about us*/    /* about us*/          /* about us*/            /* about us*/
+
+
+.div2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.team-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.mission {
+    background-color: #f9f9f9;
+    background-image: none;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    display: flex;
+}
+
+.mission .div1{
+    padding: 25px;
+}
+.mission1 .div2 h2{
+    font-size: 60px;
+    color: #ececec;
+}
+
+.Ab_sec1 {
+    display: flex;
+    height: 100vh; 
+    width: auto;          /*The height is as high as the entire                                 visible area of ​​your browser window.*/
+    opacity: 1;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(QG5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.Ab_sec1 .Ab_content h1{
+    font-size: 6em;             /* Use em units for relative font size */
+    margin-bottom: 20px;
+    text-align: left;  
+    margin-left: 50px; 
+    padding-left: 50px;  
+}
+.Ab_sec1 .Ab_content h1:hover {
+    color: rgb(57, 176, 255); 
+    animation: zoomInBlast 0.8s ease-in-out;
+  }
+
+.Ab_sec1 .Ab_content p {
+    font-size: 1.5em;
+    max-width: 85%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+/*Shop page                  shop page                      shop page     */
+    /*Shop page                  shop page                      shop page     */
+        /*Shop page                  shop page                      shop page     */
+            /*Shop page                  shop page                      shop page     */
+                /*Shop page                  shop page                      shop page     */
+
+
+
+.shop_sec1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(B3.jpg);
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.shop_sec1 h1{
+    font-size: 80px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* End of Hero section */
+
+
+.shop_sec2{
+    width: 100%;
+    height: 120vh;
+    background-color: #161616;
+    color: #f6f4de;
+    padding: 30px 40px;
+}
+
+.shop_sec2 h1{
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.shop_sec2 .gallery{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.shop_sec2 .gallery .card{
+    width: 300px;
+    border: 2px solid #f6f4de;
+    border-radius: 8px;
+    font-family: "poppins";
+    /* padding: 5px; */
+}
+
+.shop_sec2 .gallery .card:hover img{
+    filter: brightness(126%);
+    transition: all ease-in-out 0.25s;
+}
+
+.shop_sec2 .gallery .card img{
+    width: 100%;
+    height: 350px;
+    object-position: bottom;
+    object-fit: cover;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.shop_sec2 .gallery .card .card-details{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.shop_sec2 .gallery .card .card-details .card-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop_sec2 .gallery .card .card-details .card-price .off{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.shop_sec2 .gallery .card .card-details button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(103, 138, 255);
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    transition: background-color 0.65s;
+    margin: 5px auto 10px auto;
+    font-weight: bold;
+}
+
+.shop_sec2 .gallery .card .card-details button:hover{
+    background-color: rgb(65, 65, 65);
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+/* End of Section 2 */
+
+.shop_land{
+    width: 100%;
+    background-color: #636363;
+    color: #161616;
+    padding: 30px 40px;
+}
+
+.shop_land h1{
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.shop_land .row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.shop_land .row1 .card{
+    width: 600px;
+    border: 2px solid #161616;
+    border-radius: 8px;
+    font-family: "poppins";
+    padding-bottom: 5px;
+    margin: 0 20px;
+}
+
+.shop_land .row1 .card img{
+    width: 100%;
+    height: 400px;
+}
+
+.shop_land .row1 .card:hover img{
+    filter: brightness(126%);
+    transition: all ease-in-out 0.25s;
+}
+
+.shop_land .row1 .card .card-details{
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.shop_land .row1 .card .card-details .card-price .off{
+    margin-left: 76px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.shop_land .card .card-details button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(18, 18, 48);
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    transition: background-color 0.65s;
+    margin-right: 5px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.shop_land .card .card-details button:hover{
+    background-color: rgb(48, 59, 110);
+    opacity: 0.7;
+}
+
+/* End of Section "Landscape" */
+
+.rental{
+    width: 100%;
+    background-color: #161616;
+    color: #f6f4de;
+    padding: 30px 40px;
+}
+
+.rental h1{
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.rental .gallery-top{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.rental .gallery-top .card{
+    width: 300px;
+    border: 2px solid #f6f4de;
+    border-radius: 8px;
+    font-family: "poppins";
+    /* padding: 5px; */
+}
+
+.rental .gallery-top .card:hover img{
+    filter: brightness(126%);
+    transition: all ease-in-out 0.25s;
+}
+
+.rental .gallery-top .card img{
+    width: 100%;
+    height: 300px;
+    object-position: bottom;
+    object-fit: cover;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.rental .gallery-top .card .card-details{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.rental .gallery-top .card .card-details .card-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rental .gallery-top .card .card-details .card-price .off{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.rental .gallery-top .card .card-details button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(158, 157, 255);
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    transition: background-color 0.65s;
+    margin: 5px auto 10px auto;
+    font-weight: bold;
+}
+
+.rental .gallery-top .card .card-details button:hover{
+    background-color: rgb(98, 218, 255);
+    opacity: 1;
+    color: rgb(0, 0, 0);
+}
+
+.rental .gallery-bottom{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.rental .gallery-bottom .card{
+    width: 300px;
+    border: 2px solid #f6f4de;
+    border-radius: 8px;
+    font-family: "poppins";
+    /* padding: 5px; */
+}
+
+.rental .gallery-bottom .card:hover img{
+    filter: brightness(126%);
+    transition: all ease-in-out 0.25s;
+}
+
+.rental .gallery-bottom .card img{
+    width: 100%;
+    height: 300px;
+    object-position: bottom;
+    object-fit: cover;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.rental .gallery-bottom .card .card-details{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.rental .gallery-bottom .card .card-details .card-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rental .gallery-bottom .card .card-details .card-price .off{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.rental .gallery-bottom .card .card-details button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(158, 157, 255);
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    transition: background-color 0.65s;
+    margin: 5px auto 10px auto;
+    font-weight: bold;
+}
+
+.rental .gallery-bottom .card .card-details button:hover{
+    background-color: rgb(98, 218, 255);
+    opacity: 1;
+    color: rgb(0, 0, 0);
+}
+
+/* Teblet Version (992px) */
+
+@media (max-width: 992px){
+    .hero{
+        padding: 0 30px;
+    }
+
+    .hero h1{
+        font-size: 84px;
+        line-height: 54px;
+        text-align: center;
+    }
+    
+    .hero p{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .shop_sec2{
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .shop_sec2 h1{
+        font-size: 84px;
+        line-height: 72px;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    .shop_sec2 .gallery{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .shop_sec2 .gallery .card{
+        width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .shop_sec2 .gallery .card img{
+        height: 450px;
+    }
+
+    .shop_sec2 .gallery .card .card-details h2{
+        font-size: 44px;
+        margin-left: 10px;
+        line-height: 50px;
+    }
+
+    .shop_sec2 .gallery .card .card-details .card-price{
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .shop_sec2 .gallery .card .card-details .card-price .off{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .shop_sec2 .gallery .card .card-details button{
+        font-size: 32px;
+        height: 76px;
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        width: 355px;
+    }
+
+    .shop_land{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .shop_land h1{
+        font-size: 84px;
+    }
+
+    .shop_land .row1 .card{
+        margin: 5px 5px;
+    }
+    .shop_land .row1 .card img{
+        height: 250px;
+    }
+
+    .shop_land .row1 .card .card-details h2{
+        font-size: 22px;
+    }
+
+    .shop_land .row1 .card .card-details .card-price{
+        font-size: 18px;
+    }
+
+    .shop_land .row1 .card .card-details .card-price .off{
+        font-size: 14px;
+        margin-left: 50px;
+    }
+
+    .shop_land .row1 .card .card-details button{
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 22px;
+    }
+
+    .rental{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .rental h1{
+        font-size: 84px;
+        margin-top: 20px;
+    }
+
+    .rental .gallery-top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rental .gallery-top .card{
+        margin: 15px 15px;
+        width: 400px;
+    }
+    .rental .gallery-top .card img{
+        height: 450px;
+    }
+
+    .rental .gallery-top .card .card-details h2{
+        font-size: 40px;
+    }
+
+    .rental .gallery-top .card .card-details .card-price{
+        font-size: 28px;
+    }
+
+    .rental .gallery-top .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-top .card .card-details button{
+        width: 375px;
+        height: 72px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 28px;
+    }
+
+    .rental .gallery-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rental .gallery-bottom .card{
+        margin: 15px 15px;
+        width: 400px;
+    }
+    .rental .gallery-bottom .card img{
+        height: 450px;
+    }
+
+    .rental .gallery-bottom .card .card-details h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .rental .gallery-bottom .card .card-details .card-price{
+        font-size: 28px;
+    }
+
+    .rental .gallery-bottom .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-bottom .card .card-details button{
+        width: 375px;
+        height: 72px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 28px;
+    }
+}
+
+/* Teblet Version (910px) */
+
+@media (max-width: 910px){
+    .rental{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .rental h1{
+        font-size: 84px;
+        margin-top: 30px;
+        line-height: 90px
+    }
+
+    .rental .gallery-top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rental .gallery-top .card{
+        margin: 15px 15px;
+        width: 360px;
+    }
+    .rental .gallery-top .card img{
+        height: 450px;
+    }
+
+    .rental .gallery-top .card .card-details h2{
+        font-size: 40px;
+    }
+
+    .rental .gallery-top .card .card-details .card-price{
+        font-size: 28px;
+    }
+
+    .rental .gallery-top .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-top .card .card-details button{
+        width: 335px;
+        height: 72px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 28px;
+    }
+
+    .rental .gallery-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rental .gallery-bottom .card{
+        margin: 15px 15px;
+        width: 360px;
+    }
+
+    .rental .gallery-bottom .card img{
+        height: 450px;
+    }
+
+    .rental .gallery-bottom .card .card-details h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .rental .gallery-bottom .card .card-details .card-price{
+        font-size: 28px;
+    }
+
+    .rental .gallery-bottom .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-bottom .card .card-details button{
+        width: 335px;
+        height: 72px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 28px;
+    }
+}
+
+/* Teblet Version (768px) */
+
+@media (max-width: 768px){
+    .hero{
+        padding: 0 30px;
+    }
+
+    .hero h1{
+        font-size: 72px;
+        line-height: 54px;
+        text-align: center;
+    }
+    
+    .hero p{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .shop_sec2{
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .shop_sec2 h1{
+        font-size: 72px;
+        line-height: 72px;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    .shop_sec2 .gallery{
+        flex-direction: column;
+    }
+
+    .shop_sec2 .gallery .card{
+        width: 625px;
+        margin-bottom: 40px;
+    }
+
+    .shop_sec2 .gallery .card img{
+        height: 625px;
+    }
+
+    .shop_sec2 .gallery .card .card-details h2{
+        font-size: 48px;
+        margin-left: 10px;
+    }
+
+    .shop_sec2 .gallery .card .card-details .card-price{
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .shop_sec2 .gallery .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .shop_sec2 .gallery .card .card-details button{
+        font-size: 32px;
+        height: 76px;
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        width: 580px;
+    }
+
+    .shop_land{
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .shop_land h1{
+        font-size: 72px;
+    }
+
+    .landscape .row1{
+        flex-direction: column;
+    }
+
+    .shop_land .row1 .card{
+        width: 625px;
+        margin-bottom: 30px;
+    }
+
+    .landscape .row1 .card img{
+        height: 400px;
+    }
+
+    .shop_land .row1 .card .card-details h2{
+        font-size: 36px;
+    }
+
+    .shop_land .row1 .card .card-details .card-price{
+        font-size: 24px;
+    }
+
+    .shop_land .row1 .card .card-details .card-price .off{
+        font-size: 20px;
+    }
+
+    .shop_land .row1 .card .card-details button{
+        width: 175px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 22px;
+    }
+
+    .rental h1{
+        font-size: 65px;
+        line-height: 72px;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    .rental .gallery-top{
+        flex-direction: column;
+    }
+
+    .rental .gallery-top .card{
+        width: 625px;
+        margin-bottom: 24px;
+    }
+
+    .rental .gallery-top .card img{
+        height: 600px;
+    }
+
+    .rental .gallery-top .card .card-details h2{
+        font-size: 48px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-top .card .card-details .card-price{
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-top .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .rental .gallery-top .card .card-details button{
+        font-size: 32px;
+        height: 76px;
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        width: 580px;
+    }
+
+    .rental .gallery-bottom{
+        flex-direction: column;
+    }
+    
+    .rental .gallery-bottom .card{
+        width: 625px;
+        margin-bottom: 24px;
+    }
+
+    .rental .gallery-bottom .card img{
+        height: 600px;
+    }
+
+    .rental .gallery-bottom .card .card-details h2{
+        font-size: 48px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-bottom .card .card-details .card-price{
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .rental .gallery-bottom .card .card-details .card-price .off{
+        font-size: 24px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .rental .gallery-bottom .card .card-details button{
+        font-size: 32px;
+        height: 76px;
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        width: 580px;
+    }
+}
+
+/* Mobile Version (600px) */
+
+@media (max-width: 600px){
+    .hero{
+        padding: 0 30px;
+    }
+
+    .hero h1{
+        font-size: 60px;
+        line-height: 54px;
+        text-align: center;
+    }
+    
+    .hero p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .shop_sec2{
+        height: auto;
+    }
+
+    .shop_sec2 .gallery{
+        flex-direction: column;
+    }
+
+
+    .shop_land{
+        height: auto;
+    }
+
+    .shop_land .row1{
+        flex-direction: column;
+    }
+
+    .shop_land .row1 .card{
+        width: 450px;
+    }
+
+    .shop_land .row1 .card img{
+        height: 275px;
+    }
+
+    .rental h1{
+        line-height: 72px;
+    }
+
+    .rental .gallery-top{
+        flex-direction: column;
+    }
+
+    .rental .gallery-bottom{
+        flex-direction: column;
+    }
+}
+
+/* Mobile Version (400px) */
+
+@media (max-width: 400px){
+    
+    .shop_land .row1 .card{
+        width: 350px;
+    }
+
+    .shop_land .row1 .card img{
+        height: 250px;
+    }
+
+    .shop_land h1{
+        font-size: 50px;
+        line-height: 54px;
+        padding-top: 10px;
+    }
+
+    .shop_land .row1 .card .card-details h2{
+        font-size: 18px;    
+    }
+
+    .shop_land .row1 .card .card-details .card-price .off{
+        margin-left: 32px;
+        font-size: 14px;
+    }
+
+    .shop_land .row2 .card .card-details h2{
+        font-size: 18px;    
+    }
+
+    .shop_land .row2 .card .card-details .card-price .off{
+        margin-left: 32px;
+        font-size: 14px;
+    }
+
+    .rental h1{
+        font-size: 50px;
+        line-height: 54px;
+        padding-top: 10px;
+    }
+    
+}
+
+
+/*fddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+
+
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Blog {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog_sec1, .blog_sec2, .blog_sec3, .blog_sec4{
+    display: flex;
+    margin-bottom: 40px;
+    background-color: rgb(228, 228, 228);
+}
+
+.blog_sec1 .blog_div1 , .blog_sec2 .blog_div1, .blog_sec3 .blog_div1 , .blog_sec4 .blog_div1  {
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.blog_sec1 .blog_div1 img, .blog_sec2 .blog_div1 img, .blog_sec3 .blog_div1 img, .blog_sec4 .blog_div1 img   {
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: auto;
+}
+
+
+.blog_sec1 .blog_div2, .blog_sec2 .blog_div2, .blog_sec3 .blog_div2, .blog_sec4 .blog_div2  {
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: auto;
+}
+.blog_sec1 .blog_div2 h2, .blog_sec3 .blog_div2 h2 {
+    font-size: 35px;
+    color: rgb(6, 5, 14);
+    margin-top: 25px;
+}
+.blog_sec2 .blog_div2 h2, .blog_sec4 .blog_div2 h2{
+    font-size: 35px;
+    color: rgb(19, 8, 121);
+    margin-top: 25px;
+}
+
